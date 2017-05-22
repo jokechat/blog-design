@@ -1,0 +1,123 @@
+/* 引入字体,设置字体样式 */
+
+// 定义变量
+$fontSize :12px;
+$heading_width : 380px;
+$heading_height : 32px;
+$heading_body_width : 404px;
+$red : #FF5F57;
+$yellow : #FFBD2E;
+$green : #28CA42;
+$blue : #00C0CA;
+$line_height : 32px; 
+
+@font-face {
+	font-family:'FontAwesome';
+  src:url("../fonts/fontawesome-webfont.woff2"),url("../fonts/glyphicons-halflings-regular.woff2");
+	font-weight:normal;
+	font-style:normal
+}
+
+.fa {
+	display:inline-block;
+	font:normal normal normal 14px/1 FontAwesome;
+	font-size:inherit;
+	text-rendering:auto;
+}
+
+.fa-pencil:before {
+	content:"\f040"
+}
+
+.fa-arrow-right:before {
+  content :"\f061"
+}
+
+.pull-right {
+  float: right !important;
+ }
+
+.profile {
+  position : absolute;
+}
+
+.profile__heading--desc-heading {
+  background-color  : #E3E3E3;
+  height : $heading_height;
+  width : $heading_width;
+  padding : 0 12px;
+}
+
+.profile_heading--desc-heading-wrap {
+  line-height : $line_height;
+}
+
+
+.profile__heading--desc-heading .pull-right {
+  line-height : $line_height;
+}
+.profile_heading-dot {
+  border : 10px;
+  border-radius : 50%;
+  width  : 12px;
+  height : 12px;
+  display: inline-block;
+}
+
+.profile_heading-edit {
+  font-size : $fontSize;
+  color: #999;
+  padding : 5px;
+}
+
+.profile__heading--desc-body {
+  background-color : #383838;
+  width : $heading_body_width;
+  height: 230px;
+}
+
+.profile_heading-edit:hover {
+  background-color : #FCF8E3;
+  color   : #8A6D3B;
+}
+.profile_heading-dot-red {
+  background-color: $red;  
+}
+
+.profile_heading-dot-yellow {
+  background-color: $yellow;
+}
+
+.profile_heading-dot-green {
+  background-color: $green;
+}
+
+.profile_desc > i{
+  color : $green;
+  padding : 5px;
+  animation : rotating  1.5s linear infinite;
+}
+
+@keyframes rotating 
+{
+ from {
+		transform:rotate(0deg);
+		}
+	to {
+		transform:rotate(360deg);
+		} 
+  
+}
+
+.profile_desc > span:nth-child(2) {
+  color : $blue;
+}
+
+.profile_desc > span:nth-child(3) {
+  color : $green;
+}
+
+.profile_desc > p {
+  margin-left : 30px;
+  color : $green;
+}

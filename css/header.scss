@@ -1,0 +1,21 @@
+//导航头
+
+.header-header {
+  font-family : "Cutive Mono", monospace;
+  text-align : center;
+  font-size : 3em;
+}
+
+.header-header a #title-first-part {
+  border : 1px solid #333;
+  padding : .3em .2em .1em .2em;
+  color : #333;
+  background-color : white;
+}
+
+.header-header a #title-last-part {
+  border : 1px solid #333;
+  padding : .3em .2em .1em .2em;
+  color : white;
+  background-color : #333;
+}

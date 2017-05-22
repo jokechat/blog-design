@@ -1,0 +1,89 @@
+
+@charset "UTF-8";
+/* 引入字体,设置字体样式 */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url("../fonts/fontawesome-webfont.woff2"), url("../fonts/glyphicons-halflings-regular.woff2");
+  font-weight: normal;
+  font-style: normal; }
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto; }
+
+.fa-pencil:before {
+  content: ""; }
+
+.fa-arrow-right:before {
+  content: ""; }
+
+.pull-right {
+  float: right !important; }
+
+.profile {
+  position: absolute; }
+
+.profile__heading--desc-heading {
+  background-color: #E3E3E3;
+  height: 32px;
+  width: 380px;
+  padding: 0 12px; }
+
+.profile_heading--desc-heading-wrap {
+  line-height: 32px; }
+
+.profile__heading--desc-heading .pull-right {
+  line-height: 32px; }
+
+.profile_heading-dot {
+  border: 10px;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  display: inline-block; }
+
+.profile_heading-edit {
+  font-size: 12px;
+  color: #999;
+  padding: 5px; }
+
+.profile__heading--desc-body {
+  background-color: #383838;
+  width: 404px;
+  height: 230px; }
+
+.profile_heading-edit:hover {
+  background-color: #FCF8E3;
+  color: #8A6D3B; }
+
+.profile_heading-dot-red {
+  background-color: #FF5F57; }
+
+.profile_heading-dot-yellow {
+  background-color: #FFBD2E; }
+
+.profile_heading-dot-green {
+  background-color: #28CA42; }
+
+.profile_desc > i {
+  color: #28CA42;
+  padding: 5px;
+  animation: rotating  1.5s linear infinite; }
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+.profile_desc > span:nth-child(2) {
+  color: #00C0CA; }
+
+.profile_desc > span:nth-child(3) {
+  color: #28CA42; }
+
+.profile_desc > p {
+  margin-left: 30px;
+  color: #28CA42; }
+
+/*# sourceMappingURL=index.css.map */
