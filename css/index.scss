@@ -74,6 +74,7 @@ $line_height : 32px;
   background-color : #383838;
   width : $heading_body_width;
   height: 230px;
+  opacity: .9;
 }
 
 .profile_heading-edit:hover {
@@ -120,4 +121,24 @@ $line_height : 32px;
 .profile_desc > p {
   margin-left : 30px;
   color : $green;
+}
+
+.sentence {
+  margin-bottom : 3em;
+}
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.archive {
+  margin-top : .5em;
+}
+
+.archive a {
+  color : #333;
+}
+
+.archive-date {
+  font-family: Georgia, serif;
 }
