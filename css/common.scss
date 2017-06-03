@@ -11,4 +11,35 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.pull-left {
+  float : left;
+}
+
+.pull-right {
+  float: right !important;
+ }
+
+//字体图标
+ @font-face {
+	font-family:'FontAwesome';
+  src:url("../fonts/fontawesome-webfont.woff2"),url("../fonts/glyphicons-halflings-regular.woff2");
+	font-weight:normal;
+	font-style:normal
+}
+
+.fa {
+	display:inline-block;
+	font:normal normal normal 14px/1 FontAwesome;
+	font-size:inherit;
+	text-rendering:auto;
+}
+
+.fa-pencil:before {
+	content:"\f040"
+}
+
+.fa-arrow-right:before {
+  content :"\f061"
+}
+
 

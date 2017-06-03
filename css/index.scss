@@ -11,32 +11,6 @@ $green : #28CA42;
 $blue : #00C0CA;
 $line_height : 32px; 
 
-@font-face {
-	font-family:'FontAwesome';
-  src:url("../fonts/fontawesome-webfont.woff2"),url("../fonts/glyphicons-halflings-regular.woff2");
-	font-weight:normal;
-	font-style:normal
-}
-
-.fa {
-	display:inline-block;
-	font:normal normal normal 14px/1 FontAwesome;
-	font-size:inherit;
-	text-rendering:auto;
-}
-
-.fa-pencil:before {
-	content:"\f040"
-}
-
-.fa-arrow-right:before {
-  content :"\f061"
-}
-
-.pull-right {
-  float: right !important;
- }
-
 .profile {
   position : absolute;
 }
@@ -141,4 +115,34 @@ $line_height : 32px;
 
 .archive-date {
   font-family: Georgia, serif;
+}
+
+
+// detail.html
+.content .post {
+  margin-left : -58px;
+}
+
+.content .date {
+  /* width : 126px; */
+  color: #dedede;
+  font-family: "Cutive Mono", monospace;
+}
+
+.content .date:hover {
+  color: #999999;
+}
+
+.content .date .day {
+  font-size : 1.2em;
+}
+.content .post .year {
+  transform: rotate(-90deg);
+  float: left;
+  margin-left: 1.3em;
+  margin-top: -2em;
+}
+
+.post-content {
+  margin-left : 55px;
 }
