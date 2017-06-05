@@ -32,4 +32,10 @@ body {
 .fa-arrow-right:before {
   content: ""; }
 
+.fa-tags::before {
+  content: ""; }
+
+.fa-comment::before {
+  content: "\f075"; }
+
 /*# sourceMappingURL=common.css.map */

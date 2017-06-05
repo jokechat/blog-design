@@ -42,4 +42,10 @@ body {
   content :"\f061"
 }
 
+.fa-tags::before {
+    content : "\f02c"
+}
 
+.fa-comment::before {
+    content: "\f075";
+}
