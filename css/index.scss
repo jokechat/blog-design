@@ -11,6 +11,12 @@ $green : #28CA42;
 $blue : #00C0CA;
 $line_height : 32px; 
 
+
+// 响应式布局 分界点阀值
+$screen-sm-min : 768px; // 小屏幕 (平板 大于768px)
+$screen-md-min : 992px; // 中等屏幕 (桌面显示器 大于992px)
+$screen-lg-min : 1200; // 大屏幕(大桌面显示器  大于)
+
 .profile {
   position : absolute;
 }
@@ -102,8 +108,17 @@ $line_height : 32px;
 }
 
 .content {
-  max-width: 720px;
-  margin: 0 auto;
+
+  @media (min-width : $screen-sm-min ) {
+   max-width : 720px; 
+   font-size : 1.8rem;
+    margin: 0 auto;
+  }
+  @media (min-width : $screen-md-min ) {
+    max-width: 720px;
+   font-size : 1.2rem;
+    margin: 0 auto;
+  }
 }
 .archive {
   margin-top : .5em;

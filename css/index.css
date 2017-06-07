@@ -69,9 +69,16 @@
 .sentence {
   margin-bottom: 3em; }
 
-.content {
-  max-width: 720px;
-  margin: 0 auto; }
+@media (min-width: 768px) {
+  .content {
+    max-width: 720px;
+    font-size: 1.8rem;
+    margin: 0 auto; } }
+@media (min-width: 992px) {
+  .content {
+    max-width: 720px;
+    font-size: 1.2rem;
+    margin: 0 auto; } }
 
 .archive {
   margin-top: .5em; }
